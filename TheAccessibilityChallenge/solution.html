@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+
+<html>
+
+<head>
+<title>MainFrameLMS</title>
+
+<link rel="stylesheet" href="stilark1.css" type="text/css">
+
+<style>
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus { /* overlay for button on index*/
+    color: #f1f1f1;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+  <span style="font-size:60px;cursor:pointer" onclick="openNav()"><span class = "meny-knapp">&#9776;</span></span>
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="C:\Users\Benja\OneDrive\Documents\Atom\TheAccessibilityChallenge\index.html">Home</a>
+      <a href="C:\Users\Benja\OneDrive\Documents\Atom\TheAccessibilityChallenge\solution.html">Solution</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "30%"; //creates a small window of accessing java menu
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+
+    </body>
+</html>
